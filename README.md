@@ -1,6 +1,6 @@
 # dwms (Dude, where's my snapshots?)
 
-If this is yelling at you, something is wrong with the Elasticsearch and the snapshot stuff.
+If this is yelling at you, something is wrong with Elasticsearch and your snapshot stuff.
 
 <p align="center"><img src="example.png" alt="example output"></p>
 
@@ -12,7 +12,7 @@ Configuration consists of an array of clusters, global settings, and global noti
 
 Global settings specified under `settings` **do not** override cluster specific settings, they should be treated as the default setting.
 
-From there specific a valid Python [strftime][] pattern to check for and it'll look for an **exact** match.
+From there specify a valid Python [strftime][] pattern to check for and it'll look for an **exact** match.
 
 ## Running ad-hoc as a CLI
 
