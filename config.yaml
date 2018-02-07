@@ -1,0 +1,33 @@
+---
+settings:
+  username: dude
+  password: thatrugtiedtheroomtogether
+notifiers:
+  zabbix: your.zabbix.key
+  slack:
+    url: https://your-slack-webhook-url-here.com/.../...
+  hipchat:
+    url: https://hipchat.example.com/v2/room/.../notification
+    token: your-token
+  stdout: true
+clusters:
+  - endpoint: es-example.somewhere.com
+    protocol: https
+    port: 9200
+    repositories:
+      ceph:
+        patterns:
+          - 'kibana-%Y%m%d'
+          - '%Y%m%d'
+        type: s3
+  - endpoint: es-something.anywhere.com
+    protocol: https
+    port: 9200
+    repositories:
+      ceph:
+        patterns:
+          - '%Y%m%d'
+        type: s3
+    settings:
+      username: guy
+      password: thisguyspassword

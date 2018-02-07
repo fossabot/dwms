@@ -1,0 +1,15 @@
+---
+settings:
+  username: demo
+  password: demo
+notifiers:
+  stdout: true
+clusters:
+  - endpoint: localhost
+    protocol: http
+    port: 9200
+    repositories:
+      sample:
+        patterns:
+          - '%Y%m%d'
+        type: fs

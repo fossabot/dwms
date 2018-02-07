@@ -1,0 +1,11 @@
+version: '2'
+services:
+  elasticsearch:
+    image: fxdgear/elasticsearch:5.5.0
+    environment:
+      - "cluster.name=dude-cluster"
+      - "node.name=dude-node1"
+      - "path.repo=/tmp/backup"
+      - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
+    ports:
+      - 9200:9200
