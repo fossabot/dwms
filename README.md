@@ -1,4 +1,6 @@
 # dwms (Dude, where's my snapshots?)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBattleroid%2Fdwms.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBattleroid%2Fdwms?ref=badge_shield)
+
 
 If this is yelling at you, something is wrong with Elasticsearch and your snapshot stuff.
 
@@ -51,3 +53,7 @@ Severity | Status
 These are reported on a **cluster wide** basis, not a per pattern basis. We don't need that much granularity, just the big picture. So anything missing or stuck is cause for concern and we can dig deeper once we know of a problem.
 
 [strftime]: https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBattleroid%2Fdwms.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBattleroid%2Fdwms?ref=badge_large)
